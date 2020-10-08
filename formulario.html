@@ -36,6 +36,8 @@
     <!-- Contenido de la página -->
     <div class="container">
       <h1>Formulario</h1>
+      <div class="card-header ">Informacion del estudiante <small class="text-danger">*Obligatorio</small></div>
+
       <small class="text-danger">* Obligatorio</small>
 
       <form id="formEstudiante" action="" method="GET">
@@ -54,6 +56,13 @@
         </div>
          
         <div class="form-row">
+
+          <!--Carnet-->
+          <div class="form-group col-md-4">
+            <label for="carne">Carné:<span class="text-danger">*</span></label>
+            <input type="text" class="form-control" placeholder="Carné" id="carne" name="carne">
+        </div>
+
           <!-- Carrera -->
           <div class="form-group col-md-6">
             <label for="carrera">Carrera: <span class="text-danger">*</span></label><br>
@@ -64,6 +73,8 @@
               <option value="ingElectrica">Ing. Eléctrica</option>
             </select>
           </div>
+
+          
 
           <!-- Sexo -->
           <div class="form-group col-md-6">
